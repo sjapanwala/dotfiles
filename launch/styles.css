@@ -1,0 +1,125 @@
+/* Gruvbox Theme Colors */
+:root {
+    --bg-color: #282828;
+    --fg-color: #ebdbb280;
+    --accent-color: #8ec07c80;
+    --highlight-color: #fe801980;
+    --overlay-color: rgba(0, 0, 0, 0.5); /* Dark overlay color */
+}
+
+html, body { /* Reset margins and padding */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Consolas', 'Courier New', monospace;
+    color: var(--fg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('gruvsky.jpg') no-repeat center center fixed; /* Replace with your image path */
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -2; /* Send background behind content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--overlay-color); /* Apply dark overlay */
+    z-index: -1; /* Place the overlay above the background but below the content */
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.clock {
+	font-family: 'Roboto', sans-serif;
+	font-size: 5.0rem; /* Adjust the size as needed */
+    	color: var(--fg-color);
+    	margin-top: 10px; /* Add some space above the clock */
+}
+.search-bar {
+    background-color: var(--fg-color);
+    padding: 15px; /* Increased padding */
+    border: 2px solid var(--accent-color);
+    border-radius: 5px;
+    width: 400px; /* Adjusted width for a larger search bar */
+    font-size: 1.2rem; /* Increased font size for better readability */
+    margin-right: 0px;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px; /* Increased padding for the button */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2rem; /* Increased font size for the button */
+    margin-left: 0px;
+}
+
+.search-button:hover {
+    background-color: var(--highlight-color);
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    font-family: 'Consolas', 'Courier New', monospace;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.button:hover {
+    background-color: var(--highlight-color);
+}
+
+

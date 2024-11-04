@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>launch page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <header>
+      <div id="clock" class="clock"></div>
+      <h3>do some useful shit with your life</h3>
+    </header>
+    <main>
+        <div class="search-container">
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" class="search-bar" placeholder="search here">
+                <button type="submit" class="search-button">🔎</button>
+            </form>
+        </div>
+        <div class="button-container">
+            <a href="https://github.com/sjapanwala" class="button">github</a>
+            <a href="https://open.spotify.com" class="button">spotify</a>
+            <a href="https://chatgpt.com/?model=4o" class="button">chatgpt</a>
+            <a href="https://claude.ai" class="button">claude</a>
+        </div>
+        <div class="button-container">
+            <a href="https://eclass.srv.ualberta.ca/my/"class="button">eclass</a>
+            <a href="https://canvas.ualberta.ca/" class="button">canvas</a>
+            <a href="https://myaccount.google.com/?hl=en_GB&utm_source=OGB&utm_medium=act&gar=WzUwXQ" class="button">g apps</a>
+            <a href="https://reddit.com" class="button">reddit</a>
+        </div>
+    </main>
+     <script>
+        function updateClock() {
+            const now = new Date();
+            const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false };
+            const timeString = now.toLocaleTimeString([], options);
+            document.getElementById('clock').textContent = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); 
+    </script>
+</body>
+</html>
