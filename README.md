@@ -2,6 +2,12 @@
 <img src="screenshot.png">
 
 ```txt
+dependencies
+transparency: picom
+wallpapers: feh
+```
+
+```txt
 Window Manager: i3
 Bar: polybar / i3-bar
 App Launcher: ROFI
