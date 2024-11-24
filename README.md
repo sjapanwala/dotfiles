@@ -1,1 +1,1 @@
-<img src="~/dotfiles/screenshot.png">
+<img src="screenshot.png">
