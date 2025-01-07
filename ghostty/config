@@ -1,0 +1,9 @@
+font-family = SFMono Nerd Font 
+font-size = 15
+theme = GruvboxDarkHard
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+background-opacity = 0.96
+# foreground = d4be98
+title = " "
+
