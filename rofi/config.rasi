@@ -12,11 +12,11 @@
   dark1:            #21232933;
   dark2:            #00000000;
 
-  accent:           #F47E38;
+  accent:           #E6E6FA;
 
   background-color: @dark1;
   background-alt:   @dark1;
-  border-color:     @dark2;
+  border-color:     #f3eddf;
   text-color:       @white;
   dark-text-color:  @black;
   main-color:       @white;
@@ -27,8 +27,8 @@
 
 window {
   background-color: @background-alt;
-  width:            50%;
-  height:           75%;
+  width:            20%;
+  height:           35%;
   fullscreen:       false;
   border:           none;
   border-radius:    0 0 7.5px 7.5px;
